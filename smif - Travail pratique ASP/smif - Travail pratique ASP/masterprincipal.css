@@ -1,0 +1,14 @@
+﻿.Button {
+    float: right;
+	display:block;
+	text-align:center;
+    width:10%;
+    height:2%;
+	border-width:3px;
+	border-color:black;
+}
+
+.img{
+    float:left;
+    width:15%;
+}

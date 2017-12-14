@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="mastersecondaire.master.cs" Inherits="smif___Travail_pratique_ASP.mastersecondaire" %>
+<%-- Page maitre secondaire affiche le nom des villes pour les photos --%>
+<asp:Content ID="Content2" ContentPlaceHolderID="CPH_Page" runat="server">
+    <style>
+        .Encadrer1{
+            border:3px solid black;
+            float:left;
+            padding:3%;
+            margin-top:1%;
+            background-color:orange;
+        }
+       
+</style>
+    <asp:ContentPlaceHolder ID="CPH_Gauche" runat="server">
+        <div class="Encadrer1">
+            
+            <asp:ImageButton ID="pitts" runat="server" OnClick="pitts_Click" ImageUrl="~/pitts.jpg" />
+             <br />
+            <br />
+            <br />
+            <asp:ImageButton ID="ny" runat="server" OnClick="ny_Click" ImageUrl="~/newyork.jpg" />
+             <br />
+            <br />
+            <br />
+            <asp:ImageButton ID="phil" runat="server" OnClick="phil_Click" ImageUrl="~/philfr.jpg" />
+        </div>
+        </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="CPH_Droite" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+</asp:Content>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{872B0E35-FB27-4A9F-8180-4DB290DC5FDF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>smif___Travail_pratique_ASP</RootNamespace>
+    <AssemblyName>smif - Travail pratique ASP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acceuil.aspx" />
+    <Content Include="Acceuilfr.jpg" />
+    <Content Include="Add.jpg" />
+    <Content Include="ajouter.jpg" />
+    <Content Include="App_Data\smif-BD.mdf" />
+    <Content Include="App_Data\smif-BD_log.ldf">
+      <DependentUpon>smif-BD.mdf</DependentUpon>
+    </Content>
+    <Content Include="Basedonner.aspx" />
+    <Content Include="Calendrier.aspx" />
+    <Content Include="cloche.jpg" />
+    <Content Include="Connecter.aspx" />
+    <Content Include="connecter.jpg" />
+    <Content Include="Dateen.jpg" />
+    <Content Include="Datefr.jpg" />
+    <Content Include="empire.jpg" />
+    <Content Include="find.jpg" />
+    <Content Include="home.jpg" />
+    <Content Include="login.jpg" />
+    <Content Include="logo.png" />
+    <Content Include="MasterPrincipal.Master" />
+    <Content Include="mastersecondaire.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Membreen.jpg" />
+    <Content Include="Membrefr.jpg" />
+    <Content Include="NewYork.aspx" />
+    <Content Include="newyork.jpg" />
+    <Content Include="original.jpg" />
+    <Content Include="phil.jpg" />
+    <Content Include="Philadelphie.aspx" />
+    <Content Include="philenn.jpg" />
+    <Content Include="philfr.jpg" />
+    <Content Include="photos.jpg" />
+    <Content Include="photoshopfinal.jpg" />
+    <Content Include="pitts.jpg" />
+    <Content Include="Pittsburg.aspx" />
+    <Content Include="masterprincipal.css" />
+    <Content Include="timequare.jpg" />
+    <Content Include="verif.jpg" />
+    <Content Include="voyage.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceuil.aspx.cs">
+      <DependentUpon>Acceuil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acceuil.aspx.designer.cs">
+      <DependentUpon>Acceuil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basedonner.aspx.cs">
+      <DependentUpon>Basedonner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basedonner.aspx.designer.cs">
+      <DependentUpon>Basedonner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendrier.aspx.cs">
+      <DependentUpon>Calendrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendrier.aspx.designer.cs">
+      <DependentUpon>Calendrier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connecter.aspx.cs">
+      <DependentUpon>Connecter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Connecter.aspx.designer.cs">
+      <DependentUpon>Connecter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewYork.aspx.cs">
+      <DependentUpon>NewYork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewYork.aspx.designer.cs">
+      <DependentUpon>NewYork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Philadelphie.aspx.cs">
+      <DependentUpon>Philadelphie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Philadelphie.aspx.designer.cs">
+      <DependentUpon>Philadelphie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pittsburg.aspx.cs">
+      <DependentUpon>Pittsburg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pittsburg.aspx.designer.cs">
+      <DependentUpon>Pittsburg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPrincipal.Master.cs">
+      <DependentUpon>MasterPrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPrincipal.Master.designer.cs">
+      <DependentUpon>MasterPrincipal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="mastersecondaire.master.cs">
+      <DependentUpon>mastersecondaire.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mastersecondaire.master.designer.cs">
+      <DependentUpon>mastersecondaire.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Acceuil.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Acceuil.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Connecter.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Connecter.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Calendrier.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Calendrier.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Basedonner.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\basedonner.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Philadelphie.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Philadelphie.aspx.en.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3514/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
